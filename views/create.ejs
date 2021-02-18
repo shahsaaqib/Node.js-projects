@@ -1,0 +1,23 @@
+<html lang="en">
+<%- include("./partials/head.ejs") %>
+
+<body>
+  <%- include("./partials/nav.ejs") %>
+
+  <div class="Add-Student">
+    <form action="/addStd" method="POST">
+      <label for="stdName">Student Name:</label>
+      <input type="text" id="stdName" name="stdName" required>
+      <label for="stdAddress">Student Address:</label>
+      <input type="text" id="stdAddress" name="stdAddress" required>
+      <label for="stdMarks">Marks:</label>
+      <input type="text" id="stdMarks" name="stdMarks" required>
+      <label for="stdPercentage">Percentage:</label>
+      <input type="text" id="stdPercentage" name="stdPercentage" required>
+      <button>Submit</button>
+    </form>
+  </div>
+
+  <%- include("./partials/footer.ejs") %>
+</body>
+</html>
